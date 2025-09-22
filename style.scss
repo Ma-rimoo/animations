@@ -1,8 +1,8 @@
 @keyframes spin {
-    from {
+    0% {
         transform:rotate(0deg);
     }
-    to {
+    100% {
         transform:rotate(360deg);
     }
 }
@@ -24,10 +24,41 @@
     animation: spin 1s linear infinite;
 }
 
-.content {
-    font-family: "Fleur de Leah", cursive;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 200px;
+@keyframes boom {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+
 }
 
+@keyframes color {
+    0% {
+        color: lightcoral;
+    }
+    50% {
+        color: lightblue;
+    }
+    100% {
+        color: lightcoral;
+    }
+}
+
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Fleur de Leah", cursive;
+    font-size: 200px;
+    animation: boom 1s linear infinite, color 1s linear infinite;
+}
+
+.content:hover {
+    animation: spin 1s;;
+}
