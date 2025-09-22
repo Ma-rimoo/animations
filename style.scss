@@ -75,21 +75,24 @@
     animation: spin 1s;;
 }
 
-@keyframes movement {
+@keyframes boom-movement {
     0% {
-        transform: translateY(100px);
+        transform: translateY(0px);
+        transform: scale(1);
     }
     25% {
-        transform: translateX(-100px);
+        transform: translateX(-50px);
     }
     50% {
-        transform: translateX(100px);
+        transform: translateX(50px);
+        transform: scale(1.2); 
     }
     75% {
-        transform: translateX(-100px);
+        transform: translateX(-50px);
     }
     100% {
-        transform: translateY(100px);
+        transform: translateY(50px);
+        transform: scale(1);
     }
 }
 
@@ -103,7 +106,7 @@
     width: 100px;
     height: 90px;
 
-    animation: boom 1s linear infinite, movement 5s linear infinite;
+    animation: boom-movement 4s linear infinite;;
 
     &__left {
         position: absolute;
