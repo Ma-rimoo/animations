@@ -13,4 +13,9 @@
   border-right: 5px solid blue;
   border-radius: 50%;
   animation: spin 2s linear infinite;
+}
+
+.spinner {
+  background-image: url(https://www.pngall.com/wp-content/uploads/14/Loading-PNG-Image-File.png);
+  animation: spin 2s linear infinite;
 }/*# sourceMappingURL=style.css.map */
